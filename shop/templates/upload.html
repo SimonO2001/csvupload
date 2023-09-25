@@ -1,0 +1,16 @@
+<!-- shop/templates/upload.html -->
+
+<html lang="en">
+    <body>
+        <form
+            action="/upload/"
+            enctype="multipart/form-data"
+            method="post"
+        >
+            {% csrf_token %}
+            {{ form }}
+            <br/>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
